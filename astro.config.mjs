@@ -19,7 +19,7 @@ const whenExternalScripts = (items = []) =>
   SITE.googleAnalyticsId ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: SITE.origin,
+  site: 'https://laucandrique.netlify.app',
   base: SITE.basePathname,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
