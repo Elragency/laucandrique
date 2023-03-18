@@ -8,7 +8,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-import backgroundlol from '~/layouts/background-lol.astro';
+
 
 import { headerData } from '~/data';
 
@@ -19,6 +19,8 @@ const meta = {
 };
 
 ---
+
+
 
 <Layout {meta}>
   
@@ -58,31 +60,59 @@ const meta = {
   </div>
 
 
+   <!-- CARROUSSEL WITH PACKAGE -->
 
+   <div id="controls-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96"></div>
+  
+  <!-- Cards I want but barely working -->
+    <div class="container">
+      <div class="card h-72 bg-gradient-to-r from-amber-600 to-amber-800" >
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <h3 class="title">Forfait Bronze</h3>
+        <div class="bar">
+          <li class="flex space-x-3">
+          </div>
+            <!-- Icon -->
+        </li>
+        </div>
+        <div class="circle">
+        </svg>
+        </div>
+      </div>
+      <div class="card h-72 bg-gradient-to-r from-zinc-400 to-zinc-800">
+        <h3 class="title">Forfait Argent</h3>
+        <div class="bar">
+        </div>
+        <div class="circle">
+        </svg>
+        </div>
+      </div>
+      <div class="card h-72 bg-gradient-to-r from-amber-200 to-amber-400 ">
+        <h3 class="title">Forfait Or </h3>
+        <div class="bar">
+        </div>
+        </svg>
+        </div>
+      </div>
+      </div>
+    </div>
+  <br>
 
 
 </Layout>
-
+</section>
 
 
 
 <style>
-  #intro {
-  background-image: url("src/assets/images/test1.png");
-  height: 100vw;
-  background-repeat: no-repeat;
-  position: relative;
-  opacity: 0.5;
-  flex-wrap: wrap;
-}
+      #intro {
+        background-image: url("src/assets/images/outre-50.png");
+        height: 100vh;
+      }
 
-#opacc {
-  opacity: 1;
-}
-
-/* .container {
-  opacity: 0.2;
-} */
 
 </style>
 
