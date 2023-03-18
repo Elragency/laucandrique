@@ -1,7 +1,8 @@
 ---
+import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
+
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -10,29 +11,15 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import { headerData } from '~/data';
 
 const meta = {
-  title: 'Saas Landing Page',
+  title: "Saas Landing Page",
+  description: "ITE.description",
+  dontUseTitleTemplate: true,
 };
+
 ---
 
 <Layout {meta}>
-  <Fragment slot="header">
-    <Header
-      {...headerData}
-      actions={[
-        {
-          type: "ghost",
-          text: 'Login',
-          href: '#',
-        },
-        {
-          type: "primary",
-          text: 'Sign Up',
-          href: '#',
-        },
-      ]}
-      isSticky
-    />
-  </Fragment>
+
 
   <!-- Hero2 Widget ******************* -->
 

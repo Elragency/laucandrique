@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'Laucandrique',
-          href: getPermalink('/landing/Laucandrique'),
+          href: getPermalink('/testlauc'),
         },
         {
           text: 'Startup',
@@ -17,6 +17,7 @@ export const headerData = {
           text: 'Mobile App',
           href: getPermalink('/landing/mobile-app'),
         },
+
       ],
     },
     {
@@ -28,11 +29,11 @@ export const headerData = {
         },
         {
           text: 'Pricing',
-          href: '#',
+          href: '/pages/testlauc',
         },
         {
           text: 'About us',
-          href: '#',
+          href: '/landing/testlauc',
         },
         {
           text: 'Contact',
@@ -52,6 +53,9 @@ export const headerData = {
       text: 'Nous Joindre',
       href: '/landing/nous-joindre',
     },
+
+
+
     {
       text: 'Blog',
       href: getBlogPermalink(),

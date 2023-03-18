@@ -25,12 +25,12 @@ const meta = {
 
 <Layout {meta}>
   <!-- Hero Widget ******************* -->
-
-
+  
   <Hero
+  
     callToAction={{ text: 'Demande de Soumission', href: 'landing/nous-joindre', icon: 'tabler:check' }}
     callToAction2={{ text: 'En savoir plus', href: '#features' }}
-    image={{ src: import('~/assets/images/test1.png'), alt: 'gestion de syndicat de coppropriétés' }}
+
   >
   
     <Fragment slot="title">
@@ -413,3 +413,12 @@ const meta = {
     </Fragment>
   </CallToAction>
 </Layout>
+
+
+
+<style>
+  #intro {
+    background-image: url("src/assets/images/test1.png");
+  height: 100vh;
+}
+</style>

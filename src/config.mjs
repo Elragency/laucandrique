@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/images/laucandriquelogo.png';
 
 const CONFIG = {
   name: 'Laucandrique',
@@ -14,7 +14,7 @@ const CONFIG = {
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: 'fr',
   textDirection: 'ltr',
 
   dateFormatter: new Intl.DateTimeFormat('en', {
