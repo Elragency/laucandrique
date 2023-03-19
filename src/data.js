@@ -7,16 +7,16 @@ export const headerData = {
       links: [
         {
           text: 'Laucandrique',
-          href: getPermalink('/testlauc'),
+          href: getPermalink('/Laucandrique'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
+          text: 'Notre Équipe ',
+          href: getPermalink('/Laucandrique#notre-equipe'),
         },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
-        },
+        // {
+        //   text: 'Mobile App',
+        //   href: getPermalink('/landing/mobile-app'),
+        // },
 
       ],
     },
@@ -24,40 +24,44 @@ export const headerData = {
       text: 'Nos Services',
       links: [
         {
-          text: 'Features',
-          href: '/landing/test',
+          text: 'Nos Forfaits',
+          href: '/landing/nos-forfaits',
         },
         {
-          text: 'Pricing',
-          href: '/pages/testlauc',
+          text: 'Nos Réalisations',
+          href: '/nos-forfaits#realisations',
         },
-        {
-          text: 'About us',
-          href: '/landing/testlauc',
-        },
-        {
-          text: 'Contact',
-          href: '#',
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        // {
+        //   text: 'About us',
+        //   href: '/landing/testlauc',
+        // },
+        // {
+        //   text: 'Contact',
+        //   href: '#',
+        // },
+        // {
+        //   text: 'Terms',
+        //   href: getPermalink('/terms'),
+        // },
+        // {
+        //   text: 'Privacy policy',
+        //   href: getPermalink('/privacy'),
+        // },
       ],
     },
     {
       text: 'Nous Joindre',
       href: '/landing/nous-joindre',
     },
-
-
-
     {
-      text: 'Blog',
+      text: 'Espace Client',
+      href: getPermalink('/espace-client'),
+    },
+
+
+// Ajouter la section blogue quand necessaire (ajouter Blog dans text)
+    {
+      // text: 'Blog',
       href: getBlogPermalink(),
     },
   ],
@@ -65,19 +69,16 @@ export const headerData = {
     { type: 'button', text: 'Urgences', href: getPermalink('/landing/nous-joindre') }
   ],
 };
+
+// fin de la section blog
   
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Nos Forfaits',
       links: [
-        { text: 'Features', href: '#' },
+        { text: 'Features', href: '/landing/nos-forfaits' },
         { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
       ],
     },
     {
@@ -85,9 +86,6 @@ export const footerData = {
       links: [
         { text: 'Developer API', href: '#' },
         { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
       ],
     },
     {
@@ -96,8 +94,6 @@ export const footerData = {
         { text: 'Docs', href: '#' },
         { text: 'Community Forum', href: '#' },
         { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
       ],
     },
     {
@@ -105,11 +101,6 @@ export const footerData = {
       links: [
         { text: 'About', href: '#' },
         { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
       ],
     },
   ],

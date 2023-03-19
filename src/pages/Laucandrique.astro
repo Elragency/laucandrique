@@ -1,0 +1,137 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: "Qui sommes-nous",
+  description: "ITE.description",
+  dontUseTitleTemplate: true,
+};
+
+---
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+
+<Layout {meta}>
+  
+
+        <Hero
+  
+        callToAction={{ text: 'Demande de Soumission', href: 'landing/nous-joindre', icon: 'tabler:check' }}
+        callToAction2={{ text: 'En savoir plus', href: '#features' }}
+    
+      >
+      
+        <Fragment slot="title">
+          À propos de nous <div class="text-accent dark:text-white highlight">Gestion&nbsp;Laucandrique est:</div>
+        </Fragment>
+    
+        <Fragment slot="subtitle">
+          <span class="hidden sm:inline">
+            <span class="font-semibold">Gestion immobilière Laucandrique Inc.</span>  est née en 1998 d’une fusion de Gestion Lauca Inc. et Services Andrique Inc.</span>
+            <br>
+            <br>
+            Les deux entreprises avaient comme mission commune d’accompagner les conseils d’administration de syndicats de copropriété dans la conservation de leur bien immobilier et la défense des intérêts communs des copropriétaires, et ce depuis 1987. Les besoins de ressources humaines et d’expertises complémentaires sont aux nombres des motifs qui ont justifié l’union des 2 entrepreneurs de la 1re génération de gestionnaires de copropriétés au Québec.</span>
+            <br>
+            <br>
+            <span>Après plus de 35 ans d’expérience dans le domaine, Gestion Immobilière Laucandrique a su se tailler une place de leader dans le domaine de la copropriété au Québec. Au fil des ans, le bouche-à-oreille a permis à l’entreprise de se constituer une clientèle fidèle grâce aux services rendus par les membres de l’organisation. Devant une demande croissante, le besoin d’une main-d’œuvre spécialisée a été nécessaire pour assurer le niveau de qualité qu’elle désirait offrir. De fil en aiguille, l’organisation a pris de l’ampleur et est devenue une référence dans l’industrie.</span>
+            <br>
+            <br>
+            <span>Aujourd’hui, comptant près de 12 000 unités sous gestion et une équipe de plus de 50 employés et collaborateurs, Gestion Immobilière Laucandrique navigue parmi les grands du marché. L’ajout de membres d’expertises variés dans le domaine de l’immobilier a permis d’assurer une continuité dans le succès de l’entreprise. Partie d’un besoin de modernisation, d’ingéniosité et d’un souci de la clientèle, l’entreprise poursuit son désir d’offrir un produit qui répond aux besoins actuels de notre clientèle. </span>
+        </Fragment>
+
+
+
+      </Hero>  
+
+      <body>
+        <h1 id=notre-equipe></h1>
+      </body>
+
+      <Features3
+
+      title="Notre Équipe"
+      subtitle="La Direction"
+      items={[
+        {
+          title: "Hélène Vallerand",
+          description:
+            'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+          icon: 'flat-color-icons:template',
+          image: ('~/assets/images/test1.png')
+        },
+        {
+          title: 'Des outils technos',
+          description:
+            'Une plateforme web complete pour une communication et une gestion inegalee toujours a la pointe de la technologie.',
+          icon: 'flat-color-icons:gallery',
+        },
+        {
+          title: 'Des services complets',
+          description:
+            'Display your product in action and how the Features actually create a solution for your target customer.',
+          icon: 'flat-color-icons:todo-list',
+        },
+        {
+          title: 'Content',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          icon: 'flat-color-icons:document',
+        },
+        {
+          title: 'Un departement des sinistres',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          icon: 'flat-color-icons:advertising',
+        },
+        {
+          title: 'Un prix competitif',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          icon: 'flat-color-icons:currency-exchange',
+        },
+        {
+          title: 'Testimonial',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          icon: 'flat-color-icons:voice-presentation',
+        },
+        {
+          title: 'Une entreprise familial',
+          description:
+            'Un service professionel avec un climat chaleureux pour chacun de nos clients, vous devenez un membre de la famille lorsque vous choissisez laucandrique.',
+          icon: 'flat-color-icons:business-contact',
+        },
+        {
+          title: 'Footers',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          icon: 'icon-park:page-template',
+        },
+      ]}
+    />
+
+
+
+      
+
+</Layout>
+
+

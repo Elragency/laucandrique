@@ -50,14 +50,14 @@ const meta = {
   >
 
     <Fragment slot="title">
-      Une equipe professionelle <span class="hidden lg:inline">avec un climat familial: <br class="2xl:hidden"/> </span> 
-      <span > </span> <div class="text-accent dark:text-white highlight">Gestion&nbsp;Laucandrique</div>
+      Une Équipe Professionelle <span class="hidden lg:inline">Avec un Climat Familial: <br class="2xl:hidden"/> </span> 
+      <span > </span> <div class="text-accent dark:text-white highlight">Gestion Laucandrique</div>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Gestion Laucandrique</span> a plus de 35 ans d'experience dans le domaine de la gestion de coproprietes.</span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Gestion Laucandrique:</span> La reference en matiere de gestion immobiliere peu importe la taille de votre coproprietes.
+        <span class="font-semibold">Gestion Laucandrique</span> a plus de 35 ans d'expérience dans le domaine de la gestion de copropriétés.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Gestion Laucandrique:</span> La référence en matière de gestion immobilière peu importe la taille de votre copropriétés.
     </Fragment>
 
 
@@ -149,6 +149,20 @@ const meta = {
   
 <Note></Note>
   
+<section id="slider">
+  <input type="radio" name="slider" id="s1" checked>
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3">
+  <input type="radio" name="slider" id="s4">
+  <input type="radio" name="slider" id="s5">
+
+  <label for="s1" id="slide1"><img src="src/assets/images/8500.png" alt=""></label>
+  <label for="s2" id="slide2"><img src="src/assets/images/Courscom.png" alt=""></label>
+  <label for="s3" id="slide3"><img src="src/assets/images/moutremont.png" alt=""></label>
+  <label for="s4" id="slide4"><img src="src/assets/images/8500.png" alt=""></label>
+  <label for="s5" id="slide5"><img src="src/assets/images/Courscom.png" alt=""></label>
+</section>
+
 
   
 <!-- END OF CARROUSSEL WITH CARDS -->
@@ -156,7 +170,7 @@ const meta = {
 
   <!-- Features Widget *************** -->
 
-  <Features
+  <!-- <Features
     highlight="Features"
     title="What you get with AstroWind"
     subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
@@ -202,12 +216,13 @@ const meta = {
         },
       ],
     ]}
-  />
+  /> -->
 
 
  
 
   <!-- Content Widget **************** -->
+<!-- 
 
   <Content
     highlight="Nos Services"
@@ -240,10 +255,10 @@ const meta = {
       Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
       tacimates.
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
-
+<!-- 
   <Content
     isReversed
     isAfterContent
@@ -271,12 +286,12 @@ const meta = {
       src: import('~/assets/images/vintage.jpg'),
       alt: 'Vintage Image',
     }}
-  />
+  /> -->
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Faite affaires avec des professionnelles pour prendre soins de vos biens"
     items={[
       {
         title: 'Etape #1 : <span class="font-medium">Contactez-nous</span>',
@@ -291,13 +306,13 @@ const meta = {
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Etape #3 : <span class="font-medium">Customize styles</span>',
+        title: 'Etape #3 : <span class="font-medium">Rencontrer votre gestionnaire</span>',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Débutons !',
         icon: 'tabler:check',
       },
     ]}
@@ -361,7 +376,7 @@ const meta = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <LatestPosts
+  <!-- <LatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
 			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
@@ -373,35 +388,156 @@ const meta = {
       'useful-resources-to-create-websites.md',
       'astrowind-template-in-depth.md',
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
     callToAction={{
-      text: 'Get template',
+      text: 'Demander Une Soumission !',
       href: 'landing/nous-joindre',
-      icon: 'tabler:download',
+      icon: 'tabler:check',
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Place au <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Changement !</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Prenez soins de vos biens immobiliers: <br class="hidden md:inline" />Faites affaire avec Laucandrique !
     </Fragment>
   </CallToAction>
 </Layout>
 
 
-<style>
+<style media="screen">
       #intro {
         background-image: url("src/assets/images/outre-50.png");
         height: 100vh;
         padding-top: 15px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        background-position: center center;
       }
+
+     
+      
+  body {
+margin: 0;
+background: #EEE;
+user-select: none;
+font-family: sans-serif;
+}
+
+
+#slider {
+position: relative;
+width: 50%;
+height: 32vw;
+margin: 150px auto;
+margin-top: 100px;
+font-family: 'Helvetica Neue', sans-serif;
+perspective: 1400px;
+transform-style: preserve-3d;
+}
+
+input[type=radio] {
+position: relative;
+top: 108%;
+left: 50%;
+width: 18px;
+height: 18px;
+margin: 0 15px 0 0;
+opacity: 0.4;
+transform: translateX(-83px);
+cursor: pointer;
+}
+
+
+input[type=radio]:nth-child(5) {
+margin-right: 0px;
+}
+
+input[type=radio]:checked {
+opacity: 1;
+}
+
+
+
+
+#slider label,
+#slider label img {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+color: white;
+font-size: 70px;
+font-weight: bold;
+border-radius: 3px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 400ms ease;
+}
+
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+ #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+ #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+transform: translate3d(20%, 0, -100px);
+}
+
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+ #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+transform: translate3d(40%, 0, -250px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+ #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+transform: translate3d(-40%, 0, -250px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+ #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+transform: translate3d(-20%, 0, -100px);
+}
 
 
 </style>

@@ -23,6 +23,7 @@ const CONFIG = {
     day: 'numeric',
     timeZone: 'UTC',
   }),
+  
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
@@ -55,6 +56,7 @@ const CONFIG = {
       disabled: false,
     },
   },
+  
 };
 
 export const SITE = { ...CONFIG, blog: undefined };

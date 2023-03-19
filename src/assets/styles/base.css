@@ -132,7 +132,7 @@ body {
 
 svg {
   fill: #17141d;
-  stroke-width: 2px;
+  stroke-width: 0px;
 }
 
 .card:hover .stroke {
