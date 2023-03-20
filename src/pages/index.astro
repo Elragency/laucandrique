@@ -175,11 +175,11 @@ const meta = {
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
 
-  <label for="s1" id="slide1"><image src='/src/assets/images/moutremont.png' alt=""></label>
-  <label for="s2" id="slide2"><img src='src/assets/images/Courscom.png' alt=""></label>
-  <label for="s3" id="slide3"><img srcset='src/assets/images/moutremont.png' alt=""></label>
-  <label for="s4" id="slide4"><img src='src/assets/images/8500.png' alt=""></label>
-  <label for="s5" id="slide5"><img src='src/assets/images/8500.png' alt=""></label>
+  <label for="s1" id="slide1"><img class=sl1 alt=""></label>
+  <label for="s2" id="slide2"><img class=sl2 alt=""></label>
+  <label for="s3" id="slide3"><img class=sl3 alt=""></label>
+  <label for="s4" id="slide4"><img class=sl3 alt=""></label>
+  <label for="s5" id="slide5"><img class=sl5 alt=""></label>
 </section>
 
 
@@ -558,5 +558,20 @@ box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
 transform: translate3d(-20%, 0, -100px);
 }
 
+.sl1 {
+    content: url('~/assets/images/moutremont.png');
+  }
+  .sl2 {
+    content: url('~/assets/images/8500.png');
+  }
+  .sl3 {
+    content: url('~/assets/images/Courscom.png');
+  }
+  .sl4 {
+    content: url('~/assets/images/moutremont.png');
+  }
+  .sl5 {
+    content: url('~/assets/images/8500.png');
+  }
 
 </style>
