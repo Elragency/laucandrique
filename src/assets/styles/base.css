@@ -60,34 +60,15 @@
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
-/* MOVING CARDS ADDED */
+MOVING CARDS ADDED
 body {
   background-color: #100e17;
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  position: absolute;
-  height: 500px;
-  width: 900px;
-  top: 60px;
-  left: calc(50% - 500px);
-  display: flex;
-}
 
-.card {
-  display: flex;
-  height: 580px;
-  width: 600px;
-	background-color: h-72 from-purple-600 to-blue-600;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-  box-sizing: border-box;
-}
+
+
 
 .card:not(:first-child) {
     margin-left: -50px;
