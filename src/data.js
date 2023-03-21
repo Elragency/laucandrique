@@ -13,10 +13,10 @@ export const headerData = {
           text: 'Notre Équipe ',
           href: getPermalink('/Laucandrique#notre-equipe'),
         },
-        // {
-        //   text: 'Mobile App',
-        //   href: getPermalink('/landing/mobile-app'),
-        // },
+        {
+          text: 'Notre Mission',
+          href: getPermalink('/Laucandrique#mission'),
+        },
 
       ],
     },

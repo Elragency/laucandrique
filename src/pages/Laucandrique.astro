@@ -128,7 +128,41 @@ const meta = {
       ]}
     />
 
+    <body>
+      <h1 id=mission></h1>
+    </body>
 
+    <Content
+    highlight=""
+    title="Mission et Engagement"
+    items={[
+      {
+        
+        title: 'Une mission qui nous rassemble',
+        description:
+          'Laucandrique se donne comme mission d’offrir une expérience client unique, qui se distingue de ce que l’on voit présentement sur le marché.',
+      },
+      {
+        title: 'Des outils pour réussir',
+        description:
+          'Nos employés ont comme but premier d’accompagner le conseil d’administration et les copropriétaires afin d’offrir une expérience de gestion optimale, un service personnalisé, un excellent rapport qualité-prix et des outils qui s’adaptent à vos besoins.',
+      },
+      {
+        title: 'Une vision qui va loin',
+        description:
+          'Laucandrique a comme vision d’accompagner tous les syndicats de copropriétés souhaitant être soutenus et entourés d’une équipe compétente, fiable et intègre dans ses méthodes de gestion. Nous aspirons à maintenir notre clientèle avec des valeurs d’excellence, de transparence et de respect afin de bâtir une relation à long terme. ',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Une mission qui nous rassemble</h3>
+    La gestion immobilière chez Laucandrique est plus qu'un simple service, c'est une passion jumelé à une volonté de réussir.
+  </Fragment>
+</Content>
 
       
 

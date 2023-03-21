@@ -1,0 +1,150 @@
+---
+import { Icon } from 'astro-icon';
+import { Picture } from '@astrojs/image/components';
+
+interface CallToAction {
+  text: string;
+  href: string;
+  icon?: string;
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  callToAction?: string | CallToAction;
+  callToAction2?: string | CallToAction;
+  image?: string | any; // TODO: find HTMLElementProps
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  content = await Astro.slots.render('content'),
+  callToAction = await Astro.slots.render('callToAction'),
+  callToAction2 = await Astro.slots.render('callToAction2'),
+  image = await Astro.slots.render('image'),
+} = Astro.props;
+---
+
+<section class="relative md:-mt-[76px] form1">
+      <body class="f1">
+        <h1><strong>DEMANDE DE SOUMISSION</strong></h1>
+        <p>Remplissez toutes les cases s'il vous plait</p>
+        <form action='https://register-demo.freecodecamp.org'>
+          <fieldset>
+            <label>Prénom: <input type="text" name="first-name" required /></label>
+            <label>Nom: <input type="text" name="last-name" required /></label>
+            <label>Courriel: <input type="email" name="email" required /></label>
+            <label>Téléphone: <input type="phone" name="phone" required /></label>
+            <label>Nombre d’unité dans l’immeuble: <input type="number" name="nb-unites" min="1" required /></label>
+            <label>Commentaires additionnels:
+                <textarea name="bio" rows="3" cols="30" placeholder="Avez-vous des specifications precises ?"></textarea>
+                    </label>
+          </fieldset>
+          <fieldset>
+            <label>Meilleur moment pour vous joindre:
+                <select name="referrer">
+                  <option value="0">Peu importe</option>
+                  <option value="1">Matin</option>
+                  <option value="2">Midi</option>
+                  <option value="3">Soir</option>
+                </select>
+            <!-- <label>Meilleur moment pour vous joindre:</label>
+            <label><input type="checkbox" name="dispos" class="inline" /> Peu importe</label>
+            <label><input type="checkbox" name="dispos" class="inline" /> Matin</label>
+            <label><input type="checkbox" name="dispos" class="inline" /> Midi</label>
+            <label><input type="checkbox" name="dispos" class="inline" /> Soir</label>
+            <label> -->
+                <label>Consentement</label>
+              <input type="checkbox" name="terms" class="inline" required /> J'accepte que Laucandrique me contacte 
+              <div><a href="/terms">Termes et conditions</a></div>
+                  </label>
+          </fieldset>
+          <input type="submit" value="Envoyer !" />
+        </form>
+      </body>
+</section>
+
+
+
+<style>
+
+    .f1 {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
+
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+	padding: 2rem 0;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+
+
+</style>
